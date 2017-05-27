@@ -50,14 +50,9 @@ end
 function Main()
     options.menu_subtitle = "Magasin             Page 1 sur 1"
     ClearMenu()
-    Menu.addButton("Récolte Cannabis (50k$)", "Recana", nil)
-    Menu.addButton("Traitement Cannabis (50k$)", "Trcana", nil)
+    	Menu.addButton("Récolte Cannabis (50k$)", "Recana", nil)
+    	Menu.addButton("Traitement Cannabis (50k$)", "Trcana", nil)
 	Menu.addButton("Vente de Cannabis (75k$)", "Vecana", nil)
-	Menu.addButton("Récolte de la Coca (100k$)", "Recoca", nil)
-	Menu.addButton("Traitement feuilles Coca (100k$)", "Trcoca1", nil)
-	Menu.addButton("Traitement pâte Coca (100k$)", "Trcoca2", nil)
-	Menu.addButton("Traitement jus Coca (100k$)", "Trcoca3", nil)
-	Menu.addButton("Vente cocaïne (150k$)", "Vecoca", nil)
 	Menu.addButton("Blanchiment argent 1 (200k$)", "Blanch1", nil)
 	Menu.addButton("Blanchiment argent 2 (200k$)", "Blanch2", nil)
 end
@@ -108,56 +103,6 @@ end)
 
 function Vecana()
     TriggerServerEvent("Vencana")
-	Menu.hidden = false
-end
-
-RegisterNetEvent("Rcoca")
-AddEventHandler("Rcoca", function()
-	Menu.hidden = false  
-end)
-
-function Recoca()
-    TriggerServerEvent("Reccoca")
-	Menu.hidden = false
-end
-
-RegisterNetEvent("Tcoca1")
-AddEventHandler("Tcoca1", function()
-	Menu.hidden = false  
-end)
-
-function Trcoca1()
-    TriggerServerEvent("Tracoca1")
-	Menu.hidden = false
-end
-
-RegisterNetEvent("Tcoca2")
-AddEventHandler("Tcoca2", function()
-	Menu.hidden = false  
-end)
-
-function Trcoca2()
-    TriggerServerEvent("Tracoca2")
-	Menu.hidden = false
-end
-
-RegisterNetEvent("Tcoca3")
-AddEventHandler("Tcoca3", function()
-	Menu.hidden = false  
-end)
-
-function Trcoca3()
-    TriggerServerEvent("Tracoca3")
-	Menu.hidden = false
-end
-
-RegisterNetEvent("Vcoca")
-AddEventHandler("Vcoca", function()
-	Menu.hidden = false  
-end)
-
-function Vecoca()
-    TriggerServerEvent("Vencoca")
 	Menu.hidden = false
 end
 
